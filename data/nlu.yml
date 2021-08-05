@@ -1,0 +1,62 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Hi
+    - Yo
+    - Sup
+- intent: goodbye
+  examples: |
+    - ciao
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - Thanks!
+- intent: provide_brew_method
+  examples: |
+    - [aeropress](brew_method)
+    - [chemex](brew_method)
+    - I'm using an [aeropress](brew_method)
+    - I'm using a [chemex](brew_method)
+    - [frenchpress](brew_method)
+    - [french press](brew_method)
+    - [bripe](brew_method)
+    - [espresso](brew_method)
+    - no [aeropress](brew_method)
+    - [mocha](brew_method)
+- intent: go_to_next_recipe_step
+  examples: |
+    - next
+    - next step
+    - go to next step
+    - what next?
+    - what now?
+    - ok
+    - okay
+    - and then?
+    - what's next?
+    - and now?
+    - Sweet!
+    - next?
+    - now?
+    - then?
+    - and?
+    - cool
+    - I've done that

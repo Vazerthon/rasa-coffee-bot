@@ -1,0 +1,464 @@
+version: "2.0"
+stories:
+- story: brew aeropress
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_get_brew_method
+  - intent: provide_brew_method
+  - action: select_recipe
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - intent: goodbye
+- story: Story from Conversation ID dcc2f4881d1043e2ad3223cb89c5ad92
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_get_brew_method
+  - intent: provide_brew_method
+    entities:
+    - brew_method: chemex
+  - slot_was_set:
+    - brew_method: chemex
+  - action: select_recipe
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - intent: provide_brew_method
+    entities:
+    - brew_method: chemex
+  - slot_was_set:
+    - brew_method: chemex
+  - action: select_recipe
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - intent: provide_brew_method
+    entities:
+    - brew_method: chemex
+  - slot_was_set:
+    - brew_method: chemex
+  - action: select_recipe
+  - intent: provide_brew_method
+    entities:
+    - brew_method: chemex
+  - slot_was_set:
+    - brew_method: chemex
+  - action: select_recipe
+  - intent: provide_brew_method
+    entities:
+    - brew_method: chemex
+  - slot_was_set:
+    - brew_method: chemex
+  - action: select_recipe
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - intent: provide_brew_method
+    entities:
+    - brew_method: chemex
+  - slot_was_set:
+    - brew_method: chemex
+  - action: select_recipe
+  - intent: provide_brew_method
+    entities:
+    - brew_method: chemex
+  - slot_was_set:
+    - brew_method: chemex
+  - action: select_recipe
+  - intent: provide_brew_method
+    entities:
+    - brew_method: chemex
+  - slot_was_set:
+    - brew_method: chemex
+  - action: select_recipe
+  - slot_was_set:
+    - brew_method: null
+  - slot_was_set:
+    - active_recipe:
+      - Grab your Chemex and a filter, place the filter in the Chemex and give it a rinse.
+      - Add your ground coffee.
+      - Pour 100g of water and give the Chemex a swirl.
+      - After 45 seconds, pour another 450g
+      - At around two minutes, pour the remaining 350g of water.
+      - Swirl the Chemex and allow to drain out.
+      - Enjoy your brew!!
+  - slot_was_set:
+    - recipe_step: null
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - intent: greet
+  - action: utter_greet
+  - action: utter_get_brew_method
+  - intent: provide_brew_method
+    entities:
+    - brew_method: chemex
+  - slot_was_set:
+    - brew_method: chemex
+  - action: select_recipe
+  - slot_was_set:
+    - brew_method: null
+  - slot_was_set:
+    - active_recipe:
+      - Grab your Chemex and a filter, place the filter in the Chemex and give it a rinse.
+      - Add your ground coffee.
+      - Pour 100g of water and give the Chemex a swirl.
+      - After 45 seconds, pour another 450g
+      - At around two minutes, pour the remaining 350g of water.
+      - Swirl the Chemex and allow to drain out.
+      - Enjoy your brew!!
+  - slot_was_set:
+    - recipe_step: 0
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - intent: greet
+  - action: utter_greet
+  - action: utter_get_brew_method
+  - intent: provide_brew_method
+    entities:
+    - brew_method: aeropress
+  - slot_was_set:
+    - brew_method: aeropress
+  - action: select_recipe
+  - slot_was_set:
+    - brew_method: null
+  - slot_was_set:
+    - active_recipe:
+      - Grab your AeroPress and a filter, place the filter in the cap and fit it to the body of the AeroPress.
+      - Place your AeroPress on top of your cup and throw in your coffee.
+      - Pour 200g of water into the AeroPress and place the lid on.
+      - After two minutes, press down gently until the AeroPress is completely empty.
+      - Enjoy your brew!!
+  - slot_was_set:
+    - recipe_step: 0
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - intent: greet
+  - action: utter_greet
+  - action: utter_get_brew_method
+  - intent: provide_brew_method
+    entities:
+    - brew_method: chemex
+  - slot_was_set:
+    - brew_method: chemex
+  - action: select_recipe
+  - slot_was_set:
+    - brew_method: null
+  - slot_was_set:
+    - active_recipe:
+      - Grab your Chemex and a filter, place the filter in the Chemex and give it a rinse.
+      - Add your ground coffee.
+      - Pour 100g of water and give the Chemex a swirl.
+      - After 45 seconds, pour another 450g
+      - At around two minutes, pour the remaining 350g of water.
+      - Swirl the Chemex and allow to drain out.
+      - Enjoy your brew!!
+  - slot_was_set:
+    - recipe_step: 0
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 1
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 2
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 3
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 4
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 5
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 6
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 7
+  - intent: greet
+  - action: utter_greet
+  - action: utter_get_brew_method
+  - intent: provide_brew_method
+    entities:
+    - brew_method: aeropress
+  - slot_was_set:
+    - brew_method: aeropress
+  - action: select_recipe
+  - slot_was_set:
+    - brew_method: null
+  - slot_was_set:
+    - active_recipe:
+      - Grab your AeroPress and a filter, place the filter in the cap and fit it to the body of the AeroPress.
+      - Place your AeroPress on top of your cup and throw in your coffee.
+      - Pour 200g of water into the AeroPress and place the lid on.
+      - After two minutes, press down gently until the AeroPress is completely empty.
+      - Enjoy your brew!!
+  - slot_was_set:
+    - recipe_step: 0
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 1
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 2
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 3
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 4
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 5
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - intent: provide_brew_method
+    entities:
+    - brew_method: chemex
+  - slot_was_set:
+    - brew_method: chemex
+  - action: select_recipe
+  - slot_was_set:
+    - brew_method: null
+  - slot_was_set:
+    - active_recipe:
+      - Grab your Chemex and a filter, place the filter in the Chemex and give it a rinse.
+      - Add your ground coffee.
+      - Pour 100g of water and give the Chemex a swirl.
+      - After 45 seconds, pour another 450g
+      - At around two minutes, pour the remaining 350g of water.
+      - Swirl the Chemex and allow to drain out.
+      - Enjoy your brew!!
+  - slot_was_set:
+    - recipe_step: 0
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 1
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 2
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 3
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 4
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 5
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 6
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 7
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+- story: Story from Conversation ID 3913113f63c04ae6bac7edd95e5e890a
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_get_brew_method
+  - intent: provide_brew_method
+  - action: select_recipe
+- story: Story from Conversation ID 7876021cfae44380b6ac6dc4b89637c2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_get_brew_method
+  - intent: provide_brew_method
+    entities:
+    - brew_method: chemex
+  - slot_was_set:
+    - brew_method: chemex
+  - action: select_recipe
+  - slot_was_set:
+    - brew_method: null
+  - slot_was_set:
+    - active_recipe:
+      - Grab your Chemex and a filter, place the filter in the Chemex and give it a rinse.
+      - Add your ground coffee.
+      - Pour 100g of water and give the Chemex a swirl.
+      - After 45 seconds, pour another 450g
+      - At around two minutes, pour the remaining 350g of water.
+      - Swirl the Chemex and allow to drain out.
+      - Enjoy your brew!!
+  - slot_was_set:
+    - recipe_step: 0
+  - intent: provide_brew_method
+    entities:
+    - brew_method: aeropress
+  - slot_was_set:
+    - brew_method: aeropress
+  - action: select_recipe
+  - slot_was_set:
+    - brew_method: null
+  - slot_was_set:
+    - active_recipe:
+      - Grab your AeroPress and a filter, place the filter in the cap and fit it to the body of the AeroPress.
+      - Place your AeroPress on top of your cup and throw in your coffee.
+      - Pour 200g of water into the AeroPress and place the lid on.
+      - After two minutes, press down gently until the AeroPress is completely empty.
+      - Enjoy your brew!!
+  - slot_was_set:
+    - recipe_step: 0
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 1
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 2
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 3
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 4
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 5
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+- story: Story from Conversation ID 2b617194778e46ada70cc689a09c689d
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_get_brew_method
+  - intent: provide_brew_method
+    entities:
+    - brew_method: espresso
+  - slot_was_set:
+    - brew_method: espresso
+  - action: select_recipe
+- story: Story from Conversation ID dacfb3cc777a44308dc5a64fbeaf24e0
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_get_brew_method
+  - intent: provide_brew_method
+  - action: select_recipe
+- story: Story from Conversation ID 34d422dbfdf74edebda69d105435ce4a
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_get_brew_method
+  - intent: provide_brew_method
+    entities:
+    - brew_method: chemex
+  - slot_was_set:
+    - brew_method: chemex
+  - action: select_recipe
+  - slot_was_set:
+    - brew_method: null
+  - slot_was_set:
+    - active_recipe:
+      - Grab your Chemex and a filter, place the filter in the Chemex and give it a rinse.
+      - Add your ground coffee.
+      - Pour 100g of water and give the Chemex a swirl.
+      - After 45 seconds, pour another 450g
+      - At around two minutes, pour the remaining 350g of water.
+      - Swirl the Chemex and allow to drain out.
+      - Enjoy your brew!!
+  - slot_was_set:
+    - recipe_step: 0
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 1
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 2
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 3
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 4
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 5
+  - slot_was_set:
+    - brew_method: chemex
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 6
+- story: Story from Conversation ID 7f98e83408844b59a3c8b172ce1fe699
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_get_brew_method
+  - intent: provide_brew_method
+    entities:
+    - brew_method: aeropress
+  - slot_was_set:
+    - brew_method: aeropress
+  - action: select_recipe
+  - slot_was_set:
+    - brew_method: null
+  - slot_was_set:
+    - active_recipe:
+      - Grab your AeroPress and a filter, place the filter in the cap and fit it to the body of the AeroPress.
+      - Place your AeroPress on top of your cup and throw in your coffee.
+      - Pour 200g of water into the AeroPress and place the lid on.
+      - After two minutes, press down gently until the AeroPress is completely empty.
+      - Enjoy your brew!!
+  - slot_was_set:
+    - recipe_step: 0
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 1
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 2
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 3
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 4
+  - intent: go_to_next_recipe_step
+  - action: next_recipe_step
+  - slot_was_set:
+    - recipe_step: 5
+  - slot_was_set:
+    - brew_method: aeropress
+  - intent: goodbye

@@ -1,0 +1,47 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- provide_brew_method:
+    use_entities: true
+- go_to_next_recipe_step:
+    use_entities: true
+entities:
+- brew_method
+slots:
+  brew_method:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  recipe_step:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: 0
+    auto_fill: true
+    influence_conversation: false
+  active_recipe:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: Hey! I'm a coffee brewing bot that can help to guide you towards tastier coffee!
+  utter_goodbye:
+  - text: Bye
+  utter_not_implemented:
+  - text: Sorry, I can't do that yet
+  utter_get_brew_method:
+  - text: How are you brewing your coffee today?
+actions:
+- select_recipe
+- next_recipe_step
+forms: {}
+e2e_actions: []
